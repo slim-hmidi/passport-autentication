@@ -1,2 +1,11 @@
 # passport-autentication
-Create a simple authentication app using passport.
+This is a simple authentication which uses passport (http://www.passportjs.org) in order to authenticate.
+
+# install packages
+npm install
+
+# build the css files
+npm run sass
+
+
+
