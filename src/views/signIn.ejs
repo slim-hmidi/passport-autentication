@@ -1,0 +1,42 @@
+<!DOCTYPE />
+<html>
+  <head>
+      <title> <%= title %> </title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+      <div class='div-form'>
+            <form  action='/signIn' method='post'>
+                <ul class="wrapper">
+                    <li>
+                        <label for='Username'>
+                           Username
+                        </label>
+                        <input type='text' placeholder='username' name='username' />
+                    </li>
+                    
+                    <li>
+                        <label for='Password'>
+                            Password
+                        </label>    
+                        <input type='password' name='password' />
+                    </li>
+                    <li>    
+                                <button type="submit">SignIn</button>
+                    </li>
+                    <li>
+                            <a href='/signUp'>Create a new account?</a>
+                    </li>
+                </ul>         
+            </form>
+            <% if(locals.message && locals.message.length) { %>
+                <label [label]={color:'red'}> <%=  locals.message  %> </label>
+                <% } %>
+
+      </div>
+    
+  </body>
+  
+</html>

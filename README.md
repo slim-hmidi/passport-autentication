@@ -7,5 +7,9 @@ npm install
 # build the css files
 npm run sass
 
+# run the app
+cd ./src
+nodemon server
+
 
 

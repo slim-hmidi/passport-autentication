@@ -1,0 +1,72 @@
+$font-text: "Comic Sans MS", cursive, sans-serif;
+$flex-display: flex;
+$align-items: center;
+
+body {
+    background-color: 71098D;
+    display: $flex-display;
+}
+
+h1 {
+    font-family: $font-text;
+
+}
+.index-wrapper {
+    align-items: $align-items;
+    margin: 0 auto;
+}
+.div-form {
+    background-color: black;
+    font-family: $font-text;
+    color: aliceblue;
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.wrapper {
+    list-style-type: none;
+    max-width: 75%;
+}
+
+.wrapper li {
+    display: flex;
+    flex-direction: column;
+    padding: .3em;
+}
+
+.wrapper li > label {
+    padding: 1 1 1 1;
+}
+
+.wrapper li > input,
+.wrapper li > button { 
+    padding: 2;
+}
+
+
+.wrapper li > button {
+    font-family: $font-text;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    width: 60%; 
+    background: gray;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+
+.wrapper li> :last-child {
+    padding-left: auto;
+}
+
+.error {
+    padding: 10;
+    color: red
+}
+
+.logout {
+    color: white;
+}
+
